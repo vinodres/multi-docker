@@ -17,6 +17,6 @@ after_success:
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     #Take these images and push them to docker hub
     - docker push vinodres/multi-client
-    - docker push vinodres/multi-ngnix
+    - docker push vinodres/multi-nginx
     - docker push vinodres/multi-server
     - docker push vinodres/multi-worker
