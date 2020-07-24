@@ -21,7 +21,6 @@ after_success:
     - docker push vinodres/multi-server
     - docker push vinodres/multi-worker
 deploy:
-    edge: true
     provider: elasticbeanstalk
     region: us-east-2
     app: multi-docker
